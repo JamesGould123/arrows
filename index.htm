@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrows</title>
+  <link rel="stylesheet" type="text/css" href="content/style.css">
+  <!--[if gte IE 9]>
+  <style
+  type="text/css">
+  .gradient {
+  filter: none;
+  }
+  </style>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+	  <h1>
+	    Triangle Examples
+	  </h1>
+	  <div data-id="#c-te1" class="cnt">
+	    <div class="triangle"></div>
+	  </div>
+	  <div data-id="#c-te2" class="cnt">
+	    <div class="arrow"></div>
+	  </div>
+	  <div data-id="#c-te3" class="cnt">
+	    <div class="arrow tall"></div>
+	  </div>
+	  <div data-id="#c-te4" class="cnt">
+	    <div class="arrow long"></div>
+	  </div>
+	  <div data-id="#c-te5" class="cnt">
+	    <div class="arrow fat"></div>
+	  </div>
+	  <div data-id="#c-te6" class="cnt">
+	    <div class="arrow skinny"></div>
+	  </div>
+	  <div class="clear"></div>
+	  <code id="c-te1">
+	    &lt;div class="triangle">&lt;/div><br>
+	    &lt;style><br>
+	    .triangle{<br>
+	    &nbsp;width: 0;<br>
+	    &nbsp;height: 0;<br>
+	    &nbsp;border-style: solid;<br>
+	    &nbsp;border-width: 30px 0 30px 50px;<br>
+	    &nbsp;border-color: transparent transparent transparent #222;<br>
+	    }<br>
+	    &lt;/style>
+	  </code>
+	  <code id="c-te2">
+	    &lt;div class="arrow">&lt;/div><br>
+	    &lt;style><br>
+	    .arrow{<br>
+	    &nbsp;width: 0;<br>
+	    &nbsp;height: 0;<br>
+	    &nbsp;border-style: solid;<br>
+	    &nbsp;border-width: 30px 0 30px 50px;<br>
+	    &nbsp;border-color: transparent transparent transparent #222;<br>
+	    }<br>
+	    .arrow:after{<br>
+	    &nbsp;content:'';<br>
+	    &nbsp;position:absolute;<br>
+	    &nbsp;transform:translate(-65px, -30px);<br>
+	    &nbsp;width: 0;<br>
+	    &nbsp;height: 0;<br>
+	    &nbsp;border-style: solid;<br>
+	    &nbsp;border-width: 30px 0 30px 50px;<br>
+	    &nbsp;border-color: transparent transparent transparent #fff;<br>
+	    }<br>
+	    &lt;/style>
+	  </code>
+		<code id="c-te3">
+			&lt;div class="arrow tall">&lt;/div><br>
+	    &lt;style><br>
+	    .arrow{<br>
+	    &nbsp;width: 0;<br>
+	    &nbsp;height: 0;<br>
+	    &nbsp;border-style: solid;<br>
+	    &nbsp;border-width: 30px 0 30px 50px;<br>
+	    &nbsp;border-color: transparent transparent transparent #222;<br>
+	    }<br>
+	    .arrow:after{<br>
+	    &nbsp;content:'';<br>
+	    &nbsp;position:absolute;<br>
+	    &nbsp;transform:translate(-65px, -30px);<br>
+	    &nbsp;width: 0;<br>
+	    &nbsp;height: 0;<br>
+	    &nbsp;border-style: solid;<br>
+	    &nbsp;border-width: 30px 0 30px 50px;<br>
+	    &nbsp;border-color: transparent transparent transparent #fff;<br>
+	    }<br>
+			.arrow.tall{<br>
+			&nbsp;border-width: 30px 0 30px 30px;<br>
+			}<br>
+			.arrow.tall:after{<br>
+			&nbsp;transform:translate(-40px, -30px);<br>
+			&nbsp;border-width: 30px 0 30px 30px;<br>
+			}<br>
+	    &lt;/style>
+		</code>
+		<code id="c-te4">
+			&lt;div class="arrow long">&lt;/div><br>
+			&lt;style><br>
+			.arrow{<br>
+			&nbsp;width: 0;<br>
+			&nbsp;height: 0;<br>
+			&nbsp;border-style: solid;<br>
+			&nbsp;border-width: 30px 0 30px 50px;<br>
+			&nbsp;border-color: transparent transparent transparent #222;<br>
+			}<br>
+			.arrow:after{<br>
+			&nbsp;content:'';<br>
+			&nbsp;position:absolute;<br>
+			&nbsp;transform:translate(-65px, -30px);<br>
+			&nbsp;width: 0;<br>
+			&nbsp;height: 0;<br>
+			&nbsp;border-style: solid;<br>
+			&nbsp;border-width: 30px 0 30px 50px;<br>
+			&nbsp;border-color: transparent transparent transparent #fff;<br>
+			}<br>
+			.arrow.long{<br>
+			&nbsp;border-width: 20px 0 20px 60px;<br>
+			}<br>
+			.arrow.long:after{<br>
+			&nbsp;transform:translate(-80px, -20px);<br>
+			&nbsp;border-width: 20px 0 20px 60px;<br>
+			}<br>
+			&lt;/style>
+		</code>
+		<code id="c-te5">
+			&lt;div class="arrow fat">&lt;/div><br>
+			&lt;style><br>
+			.arrow{<br>
+			&nbsp;width: 0;<br>
+			&nbsp;height: 0;<br>
+			&nbsp;border-style: solid;<br>
+			&nbsp;border-width: 30px 0 30px 50px;<br>
+			&nbsp;border-color: transparent transparent transparent #222;<br>
+			}<br>
+			.arrow:after{<br>
+			&nbsp;content:'';<br>
+			&nbsp;position:absolute;<br>
+			&nbsp;transform:translate(-65px, -30px);<br>
+			&nbsp;width: 0;<br>
+			&nbsp;height: 0;<br>
+			&nbsp;border-style: solid;<br>
+			&nbsp;border-width: 30px 0 30px 50px;<br>
+			&nbsp;border-color: transparent transparent transparent #fff;<br>
+			}<br>
+			.arrow.fat:after{<br>
+			&nbsp;transform:translate(-75px, -30px);<br>
+			}<br>
+			&lt;/style>
+		</code>
+		<code id="c-te6">
+			&lt;div class="arrow skinny">&lt;/div><br>
+			&lt;style><br>
+			.arrow{<br>
+			&nbsp;width: 0;<br>
+			&nbsp;height: 0;<br>
+			&nbsp;border-style: solid;<br>
+			&nbsp;border-width: 30px 0 30px 50px;<br>
+			&nbsp;border-color: transparent transparent transparent #222;<br>
+			}<br>
+			.arrow:after{<br>
+			&nbsp;content:'';<br>
+			&nbsp;position:absolute;<br>
+			&nbsp;transform:translate(-65px, -30px);<br>
+			&nbsp;width: 0;<br>
+			&nbsp;height: 0;<br>
+			&nbsp;border-style: solid;<br>
+			&nbsp;border-width: 30px 0 30px 50px;<br>
+			&nbsp;border-color: transparent transparent transparent #fff;<br>
+			}<br>
+			.arrow.skinny:after{<br>
+			&nbsp;transform:translate(-55px, -30px);<br>
+			}<br>
+			&lt;/style>
+		</code>
+
+	  <h1>Border Examples</h1>
+	  <div data-id="#c-boe1" class="cnt">
+	    <div>
+	    	<div class="border-arrow"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-boe2" class="cnt">
+	    <div>
+	    	<div class="border-arrow fat"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-boe3" class="cnt">
+	    <div>
+	    	<div class="border-arrow curvy"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-boe4" class="cnt">
+	    <div>
+	    	<div class="border-arrow curvy curvy-inside"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-boe5" class="cnt">
+	    <div>
+	    	<div class="border-arrow curvy curvy-inside flat-back"></div>
+	    </div>
+	  </div>
+		<code id="c-boe1">
+			&lt;div class="border-arrow">&lt;/div><br>
+			&lt;style><br>
+			.border-arrow{<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #222;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translateX(-14px) rotate(45deg);<br>
+			}<br>
+			&lt;/style>
+		</code>
+		<code id="c-boe2">
+			&lt;div class="border-arrow fat">&lt;/div><br>
+			&lt;style><br>
+			.border-arrow{<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #222;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translateX(-14px) rotate(45deg);<br>
+			}<br>
+			.border-arrow.fat{<br>
+				&nbsp;border-width:9px 9px 0 0;<br>
+			}<br>
+			&lt;/style>
+		</code><br>
+		<code id="c-boe3">
+			&lt;div class="border-arrow curvy">&lt;/div><br>
+			&lt;style><br>
+			.border-arrow{<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #222;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translateX(-14px) rotate(45deg);<br>
+			}<br>
+			.border-arrow.curvy{<br>
+				&nbsp;border-width:9px 9px 0 0;<br>
+				&nbsp;border-radius:7px;<br>
+			}<br>
+			&lt;/style>
+		</code><br>
+		<code id="c-boe4">
+			&lt;div class="border-arrow curvy curvy-inside">&lt;/div><br>
+			&lt;style><br>
+			.border-arrow{<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #222;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translateX(-14px) rotate(45deg);<br>
+			}<br>
+			.border-arrow.curvy{<br>
+				&nbsp;border-width:9px 9px 0 0;<br>
+				&nbsp;border-radius:7px;<br>
+			}<br>
+			.border-arrow.curvy-inside{<br>
+				&nbsp;border-width:11px 11px 0 0;<br>
+			}<br>
+			.border-arrow.curvy-inside:before{<br>
+				&nbsp;content:'';<br>
+				&nbsp;display:block;<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #fff;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translate(-2px, -3px);<br>
+				&nbsp;border-radius:4px;<br>
+			}<br>
+			&lt;/style>
+		</code><br>
+		<code id="c-boe5">
+			&lt;div class="border-arrow curvy curvy-inside flat-back">&lt;/div><br>
+			&lt;style><br>
+			.border-arrow{<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #222;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translateX(-14px) rotate(45deg);<br>
+			}<br>
+			.border-arrow.curvy{<br>
+				&nbsp;border-width:9px 9px 0 0;<br>
+				&nbsp;border-radius:7px;<br>
+			}<br>
+			.border-arrow.curvy-inside{<br>
+				&nbsp;border-width:11px 11px 0 0;<br>
+			}<br>
+			.border-arrow.curvy-inside:before{<br>
+				&nbsp;content:'';<br>
+				&nbsp;display:block;<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;border:5px solid #fff;<br>
+				&nbsp;border-width:5px 5px 0 0;<br>
+				&nbsp;transform:translate(-2px, -3px);<br>
+				&nbsp;border-radius:4px;<br>
+			}<br>
+			.border-arrow.flat-back{<br>
+				&nbsp;transform:translateX(-19px) rotate(45deg);<br>
+			}<br>
+			.border-arrow.flat-back:after{<br>
+				&nbsp;content:'';<br>
+				&nbsp;display:block;<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:8px;<br>
+				&nbsp;height:80px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(20px, -25px) rotate(-45deg);<br>
+		  }<br>
+			&lt;/style>
+		</code>
+
+	  <h1>Box Examples</h1>
+	  <div data-id="#c-bo2e1" class="cnt">
+	    <div>
+	    	<div class="box-triangle"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-bo2e2" class="cnt">
+	    <div>
+	    	<div class="box-triangle box-arrow"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-bo2e3" class="cnt">
+	    <div>
+	    	<div class="box-triangle rainbow gradient"></div>
+	    </div>
+	  </div>
+	  <div data-id="#c-bo2e4" class="cnt">
+	    <div>
+	    	<div class="box-triangle box-arrow rainbow gradient"></div>
+	    </div>
+	  </div>
+		<code id="c-bo2e1">
+			&lt;div class="box-triangle">&lt;/div><br>
+			&lt;style><br>
+			.box-triangle{<br>
+				&nbsp;position:relative;<br>
+				&nbsp;width:50px;<br>
+				&nbsp;height:50px;<br>
+				&nbsp;background-color:#222;<br>
+				&nbsp;transform:translate(-14px, 0) rotate(45deg);<br>
+			}<br>
+			.box-triangle:before{<br>
+				&nbsp;content:'';<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:35px;<br>
+				&nbsp;height:70px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(-5px, 3px) rotate(-45deg);<br>
+			}<br>
+			&lt;/style>
+		</code>
+		<code id="c-bo2e2">
+			&lt;div class="box-triangle box-arrow">&lt;/div><br>
+			&lt;style><br>
+			.box-triangle{<br>
+				&nbsp;position:relative;<br>
+				&nbsp;width:50px;<br>
+				&nbsp;height:50px;<br>
+				&nbsp;background-color:#222;<br>
+				&nbsp;transform:translate(-14px, 0) rotate(45deg);<br>
+			}<br>
+			.box-triangle:before{<br>
+				&nbsp;content:'';<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:35px;<br>
+				&nbsp;height:70px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(-5px, 3px) rotate(-45deg);<br>
+			}<br>
+			.box-triangle.box-arrow:after{<br>
+				&nbsp;content:'';<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(2px, 8px);<br>
+			}<br>
+			&lt;/style>
+		</code>
+		<code id="c-bo2e3">
+			&lt;div class="box-triangle">&lt;/div><br>
+			&lt;style><br>
+			.box-triangle{<br>
+				&nbsp;position:relative;<br>
+				&nbsp;width:50px;<br>
+				&nbsp;height:50px;<br>
+				&nbsp;background-color:#222;<br>
+				&nbsp;transform:translate(-14px, 0) rotate(45deg);<br>
+			}<br>
+			.box-triangle:before{<br>
+				&nbsp;content:'';<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:35px;<br>
+				&nbsp;height:70px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(-5px, 3px) rotate(-45deg);<br>
+			}<br>
+			.rainbow{<br>
+				&nbsp;background: #800080; /* Old browsers */<br>
+				&nbsp;/* for IE9 support details: http://www.colorzilla.com/gradient-editor/ */<br>
+				&nbsp;background: -moz-linear-gradient(45deg,  #800080 52%, #4b0082 56%, #0000ff 62%, #008000 68%, #ffff00 75%, #ffa500 83%, #ff0000 91%, #800080 100%); /* FF3.6+ */<br>
+				&nbsp;background: -webkit-gradient(linear, left bottom, right top, color-stop(52%,#800080), color-stop(56%,#4b0082), color-stop(62%,#0000ff), color-stop(68%,#008000), color-stop(75%,#ffff00), color-stop(83%,#ffa500), color-stop(91%,#ff0000), color-stop(100%,#800080)); /* Chrome,Safari4+ */<br>
+				&nbsp;background: -webkit-linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* Chrome10+,Safari5.1+ */<br>
+				&nbsp;background: -o-linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* Opera 11.10+ */<br>
+				&nbsp;background: -ms-linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* IE10+ */<br>
+				&nbsp;background: linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* W3C */<br>
+				&nbsp;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800080', endColorstr='#800080',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */<br>
+			}<br>
+			&lt;/style>
+		</code>
+		<code id="c-bo2e4">
+			&lt;div class="box-triangle box-arrow">&lt;/div><br>
+			&lt;style><br>
+			.box-triangle{<br>
+				&nbsp;position:relative;<br>
+				&nbsp;width:50px;<br>
+				&nbsp;height:50px;<br>
+				&nbsp;background-color:#222;<br>
+				&nbsp;transform:translate(-14px, 0) rotate(45deg);<br>
+			}<br>
+			.box-triangle:before{<br>
+				&nbsp;content:'';<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:35px;<br>
+				&nbsp;height:70px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(-5px, 3px) rotate(-45deg);<br>
+			}<br>
+			.box-triangle.box-arrow:after{<br>
+				&nbsp;content:'';<br>
+				&nbsp;position:absolute;<br>
+				&nbsp;width:40px;<br>
+				&nbsp;height:40px;<br>
+				&nbsp;background-color:#fff;<br>
+				&nbsp;transform:translate(2px, 8px);<br>
+			}<br>
+			.rainbow{<br>
+				&nbsp;background: #800080; /* Old browsers */<br>
+				&nbsp;/* for IE9 support details: http://www.colorzilla.com/gradient-editor/ */<br>
+				&nbsp;background: -moz-linear-gradient(45deg,  #800080 52%, #4b0082 56%, #0000ff 62%, #008000 68%, #ffff00 75%, #ffa500 83%, #ff0000 91%, #800080 100%); /* FF3.6+ */<br>
+				&nbsp;background: -webkit-gradient(linear, left bottom, right top, color-stop(52%,#800080), color-stop(56%,#4b0082), color-stop(62%,#0000ff), color-stop(68%,#008000), color-stop(75%,#ffff00), color-stop(83%,#ffa500), color-stop(91%,#ff0000), color-stop(100%,#800080)); /* Chrome,Safari4+ */<br>
+				&nbsp;background: -webkit-linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* Chrome10+,Safari5.1+ */<br>
+				&nbsp;background: -o-linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* Opera 11.10+ */<br>
+				&nbsp;background: -ms-linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* IE10+ */<br>
+				&nbsp;background: linear-gradient(45deg,  #800080 52%,#4b0082 56%,#0000ff 62%,#008000 68%,#ffff00 75%,#ffa500 83%,#ff0000 91%,#800080 100%); /* W3C */<br>
+				&nbsp;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800080', endColorstr='#800080',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */<br>
+			}<br>
+			&lt;/style><br>
+		</code>
+
+	  <h1>Usage Examples</h1>
+	  <div class="dd-cnt">
+	    <div class="dd">
+	    <div class="dd-top">
+	      <div class="dd-selection">Choose an option</div>
+	      <div class="dd-triangle"></div>
+	      <div class="clear"></div>
+	    </div>
+	    <div class="dd-bot">
+	      <div class="dd-item" data-value="Too Unhealthy">Bacon</div>
+	      <div class="dd-item" data-value="Too Boring">Vanilla Ice Cream</div>
+	      <div class="dd-item" data-value="Too Messy">Hot Cheetos</div>
+	    </div>
+	    </div>
+	  </div>
+	  <div class="sliderCnt">
+	    <div class="sliderLeft"></div>
+	    <div class="sliderRight"></div>
+	    <div class="slider">
+	    <img src="images/1.png">
+	    <img src="images/2.png">
+	    <img src="images/3.png">
+	    </div>
+	  </div>
+	  <div class="example-link">
+	    <div class="link-text">Find out more!</div>
+	    <div class="link-arrow"></div>
+	  </div>
+		<div class="clear"></div>
+  </div>
+
+  <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="scripts/functions.js"></script>
+</body>
+</html>
