@@ -5,3 +5,8 @@ You can view a full write up on this repository's contents [here](http://triilin
 #build
 I've used prepros to build this. content/style.scss compiles to content/style.css and 
 scripts/functions.js compiles to scripts/functions.min.js, both are compressed on compilation.
+
+#todo
+<ul>
+<li>Check browser compatibility</li>
+</ul>
